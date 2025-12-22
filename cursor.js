@@ -1,28 +1,33 @@
-const dot = document.querySelector('.cursor-dot');
-const ring = document.querySelector('.cursor-ring');
+const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
-let mouseX = 0;
-let mouseY = 0;
+if (!isTouchDevice){
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
 
-let ringX = 0;
-let ringY = 0;
+    let mouseX = 0;
+    let mouseY = 0;
 
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    let ringX = 0;
+    let ringY = 0;
 
-    dot.style.left = mouseX + 'px';
-    dot.style.top = mouseY + 'px';
-});
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
-function animate() {
-    ringX += (mouseX - ringX) * 0.25;
-    ringY += (mouseY - ringY) * 0.25;
+        dot.style.left = mouseX + 'px';
+        dot.style.top = mouseY + 'px';
+    });
 
-    ring.style.left = ringX + 'px';
-    ring.style.top = ringY + 'px';
+    function animate() {
+        ringX += (mouseX - ringX) * 0.25;
+        ringY += (mouseY - ringY) * 0.25;
 
-    requestAnimationFrame(animate);
+        ring.style.left = ringX + 'px';
+        ring.style.top = ringY + 'px';
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
 }
-
-animate();

@@ -12,6 +12,17 @@ body{
     cursor: none;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .cursor-dot,
+    .cursor-ring {
+        display: none;
+    }
+
+    * {
+        cursor: auto;
+    }
+}
+
 .cursor-dot{
     width: 6px;
     height: 6px;
