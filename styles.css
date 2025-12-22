@@ -1,0 +1,9 @@
+body{
+    background-color:black;
+    color:white;
+}
+.icon {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
