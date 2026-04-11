@@ -41,6 +41,15 @@ header{
     text-align: center;
 }
 
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    border: 2px solid white;
+}
+
 
 @media(min-width:768px){
 
