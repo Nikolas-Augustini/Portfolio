@@ -131,6 +131,28 @@ svg{
 
 
 @media(min-width:768px){
+
+    .menu{
+        padding: 1rem;
+        width: 3.5rem;
+        height: 2rem;
+    }
+
+    .line{
+        height: .7rem;
+        background-color: white;
+        border-radius: 100px;
+    }
+    header{
+        font-size: 15rem;
+
+        padding-left: 5rem;
+    }
+
+    .dev{
+        padding-left: 10rem;
+    }
+
     .skills-grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
