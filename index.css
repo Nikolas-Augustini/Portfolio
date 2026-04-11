@@ -1,9 +1,14 @@
 body{
     background-color:black;
-   
+    color: white;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    text-align: center;
 }
 
 
-@media(min-width:992px){
-    
+@media(min-width:768px){
 }
