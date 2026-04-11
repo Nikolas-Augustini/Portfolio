@@ -56,7 +56,9 @@ header{
 
 .card-header{
     display:flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
 
     font-size: 1rem;
     font-family: 'Poppins';
@@ -64,6 +66,20 @@ header{
 
 h3 span{
     padding-left: 1.5rem;
+}
+
+.card-header.technical::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 52%;
+
+    width: 46%;
+    height: 20%;
+    background: #9A0E0E;
+
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 svg{
