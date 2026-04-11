@@ -41,21 +41,13 @@ header{
     text-align: center;
 }
 
+
 .skills-grid{
     display: grid;
     grid-template-columns: 1fr;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
-
-/* .stacked{
-    display: grid;
-}
-
-.stacked > *{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-} */
 
 .card{
     aspect-ratio: 1 / 1;
@@ -64,8 +56,14 @@ header{
 
 .card-header{
     display:flex;
-    align-items: center;
+    justify-content: center;
+
     font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+h3 span{
+    padding-left: 1.5rem;
 }
 
 svg{
@@ -73,7 +71,7 @@ svg{
 }
 
 .card_svg{
-    width: 25%;
+    width: 15%;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     object-fit: cover;
