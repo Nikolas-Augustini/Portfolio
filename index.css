@@ -3,6 +3,22 @@ body{
     color: white;
 }
 
+.menu{
+    padding: .5rem;
+    width: 2rem;
+    height: 1.2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line{
+    height: .4rem;
+    background-color: white;
+    border-radius: 100px;
+}
+
 header{
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
@@ -13,7 +29,16 @@ header{
 }
 
 .dev{
-    padding-left: 2rem;
+    padding-left: 3rem;
+}
+
+.skill-header{
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.5rem;
+
+    padding-top: 3rem;
+    text-align: center;
 }
 
 
