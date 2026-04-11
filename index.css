@@ -5,10 +5,18 @@ body{
 
 header{
     font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+
     padding: 2rem;
-    text-align: center;
+    text-align: left;
+}
+
+.dev{
+    padding-left: 2rem;
 }
 
 
 @media(min-width:768px){
+
 }
