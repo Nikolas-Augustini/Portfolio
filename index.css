@@ -29,6 +29,34 @@ body{
         transition: transform .4s ease;
     }
 
+    .x {
+  position: relative;
+  width: 40px;
+  height: 40px;
+    }
+
+    .x::before,
+    .x::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 6px;
+        background: black;
+        border-radius: 999px;
+        transform-origin: center;
+    }
+
+    .x::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .x::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+
     .menu-display ul li{
         font-size: 2rem;
         text-align: center;
@@ -204,6 +232,10 @@ ul li{
 
     .menu:hover .line{
         background-color: #9A0E0E;
+    }
+
+    .menu-display ul li:hover{
+        font-weight: bold;
     }
 
     .line{
