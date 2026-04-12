@@ -41,8 +41,8 @@ body{
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 30px;
-        height: 6px;
+        width: 20px;
+        height: 4px;
         background: black;
         border-radius: 999px;
         transform-origin: center;
@@ -55,7 +55,6 @@ body{
     .x::after {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
-
 
     .menu-display ul li{
         font-size: 2rem;
