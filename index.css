@@ -81,6 +81,16 @@ header{
     text-align: left;
 }
 
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.name{
+    visibility: hidden;
+}
+
 .dev{
     padding-left: 3rem;
 }
@@ -241,6 +251,14 @@ ul li{
         height: .7rem;
         background-color: white;
         border-radius: 100px;
+    }
+
+    .name{
+        font-family: "Ubuntu Mono", monospace;
+        font-size: clamp(1rem, 3vh, 5rem);
+
+        color: white;   
+        visibility: visible;
     }
     
 
