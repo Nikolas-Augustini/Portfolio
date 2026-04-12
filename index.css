@@ -215,7 +215,7 @@ ul li{
     }
 
     .skill-header{
-        font-size: 6rem;
+        font-size: clamp(3rem, 5vw, 6rem);
 
         margin-top: 30rem;
         margin-bottom: .75rem;
@@ -223,11 +223,11 @@ ul li{
 
     .skills-grid{
         grid-template-columns: 1fr 1fr 1fr;
-        width: 50%;
+        width: 90%;
     }
 
     .card-header{
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 5vw, 1.5rem);
     }
 
     ul li{
