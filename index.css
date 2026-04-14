@@ -213,7 +213,12 @@ ul li{
     text-align: center;
 }
 
+.about pre{
+    font-size: .6em;
 
+    overflow: hidden;
+    text-align: center;
+}
 
 .scroll-circle{
     display: none;
