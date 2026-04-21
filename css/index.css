@@ -1,6 +1,18 @@
 body{
     background-color:black;
     color: white;
+    overflow-x: hidden;
+}
+
+#backgroundCanvas,
+#starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .menu{
@@ -307,6 +319,7 @@ ul li{
     .skills-grid{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         width: 90%;
+        padding-bottom:clamp(2rem, 5vw, 6rem);
     }
 
     .card-header{
