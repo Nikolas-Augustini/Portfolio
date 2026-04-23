@@ -3,109 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Nikolas Augustini</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-<script src="cursor.js"></script>
-
 <body>
-    <section>
-    <nav class="navbar">
-        <div class="navbar_container">
 
-            <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_4_8)">
-                <rect x="4" width="15" height="2.33333" rx="1.16667" fill="white"/>
-                <rect x="4" width="15" height="2.33333" rx="1.16667" fill="white"/>
-                <rect x="4" y="4.66667" width="15" height="2.33333" rx="1.16667" fill="white"/>
-                <rect x="4" y="4.66667" width="15" height="2.33333" rx="1.16667" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d_4_8" x="0" y="0" width="23" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset dy="4"/>
-                <feGaussianBlur stdDeviation="2"/>
-                <feComposite in2="hardAlpha" operator="out"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_8"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_8" result="shape"/>
-                </filter>
-                </defs>
-            </svg>
-        
-            <p class="name">Nikolas Augustini._</p>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="javascript/cursor.js"></script>
 
+    <canvas id="backgroundCanvas"></canvas>
+    <canvas id="starsCanvas"></canvas>
+    <script src="javascript/star.js"></script>
+
+    <div class = "top-bar">
+        <div class="menu" id="menuBtn">
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
+        <div class="name">Nikolas Augustini._</div>
+    </div>
+
+    <nav class="menu-display" id="menu-display-test">
+       <div class="x"></div>
+        <ul>
+            <li>/Home</li>
+            <li>/About</li>
+            <li>/Projects</li>
+            <li>/Contact</li>
+        </ul>
     </nav>
 
-    <div class="Home">
-        <div class="home_container">
-            <h2 class="line1">Software</h2>
-            <h2 class="line2">Developer</h2>
+    <script src="javascript/menu.js"></script>
+
+    <header>
+        Software<br>
+        <span class="dev">Developer</span>
+    </header>
+
+    <h1 class="skill-header">&ltSkills&gt</h1>
+    <div class="container">
+        <div class="skills-grid">
+
+            <div class="card stacked">
+
+                <div class = "card-header technical">
+                    <svg class = "card_svg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.21875 4.6875L6.09375 6.09375L4.21875 7.5M7.03125 7.5H8.90625M3.28125 12.6562H11.7188C12.0917 12.6562 12.4494 12.5081 12.7131 12.2444C12.9768 11.9806 13.125 11.623 13.125 11.25V3.75C13.125 3.37704 12.9768 3.01935 12.7131 2.75563C12.4494 2.49191 12.0917 2.34375 11.7188 2.34375H3.28125C2.90829 2.34375 2.5506 2.49191 2.28688 2.75563C2.02316 3.01935 1.875 3.37704 1.875 3.75V11.25C1.875 11.623 2.02316 11.9806 2.28688 12.2444C2.5506 12.5081 2.90829 12.6562 3.28125 12.6562Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <h3 class="skill-section">Technical <br> <span>Expertise</span> </h3>
+                </div>
+
+                <div class="card-content">
+                    <ul>
+                        <li>Object-Oriented Programming</li>
+                        <li>Database Design & Management</li>
+                        <li>API Design & Integration</li>
+                        <li>Linux/Unix-based Systems</li>
+                        <li>Version Control (Git)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card stacked">
+                <div class = "card-header methodology">
+                    <svg class = "card_svg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 4.6875L11.7188 3.86687M13.125 4.6875V6.09375M13.125 4.6875L11.7188 5.50812M1.875 4.6875L3.28125 3.86687M1.875 4.6875L3.28125 5.50812M1.875 4.6875V6.09375M7.5 7.96875L8.90625 7.14813M7.5 7.96875L6.09375 7.14813M7.5 7.96875V9.375M7.5 13.5938L8.90625 12.7731M7.5 13.5938V12.1875M7.5 13.5938L6.09375 12.7731M6.09375 2.22625L7.5 1.40625L8.90625 2.22687M13.125 8.90625V10.3125L11.7188 11.1331M3.28125 11.1331L1.875 10.3125V8.90625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 
+                    <h3 class="skill-section">Development <br> <span>Methodology</span> </h3>   
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Agile/Iterative Development</li>
+                        <li>User-Centered Design</li>
+                        <li>Component-Based Architecture</li>
+                        <li>Cross-Platform Development</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card stacked">
+                <div class = "card-header web">
+                    <svg class = "card_svg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.625 10.7812V11.4106C5.62503 11.6569 5.57653 11.9008 5.48226 12.1284C5.388 12.356 5.24982 12.5627 5.07563 12.7369L4.6875 13.125H10.3125L9.92437 12.7369C9.75018 12.5627 9.612 12.356 9.51774 12.1284C9.42347 11.9008 9.37497 11.6569 9.375 11.4106V10.7812M13.125 3.28125V9.375C13.125 9.74796 12.9768 10.1056 12.7131 10.3694C12.4494 10.6331 12.0917 10.7812 11.7188 10.7812H3.28125C2.90829 10.7812 2.5506 10.6331 2.28688 10.3694C2.02316 10.1056 1.875 9.74796 1.875 9.375V3.28125M13.125 3.28125C13.125 2.90829 12.9768 2.5506 12.7131 2.28688C12.4494 2.02316 12.0917 1.875 11.7188 1.875H3.28125C2.90829 1.875 2.5506 2.02316 2.28688 2.28688C2.02316 2.5506 1.875 2.90829 1.875 3.28125M13.125 3.28125V7.5C13.125 7.87296 12.9768 8.23065 12.7131 8.49437C12.4494 8.75809 12.0917 8.90625 11.7188 8.90625H3.28125C2.90829 8.90625 2.5506 8.75809 2.28688 8.49437C2.02316 8.23065 1.875 7.87296 1.875 7.5V3.28125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3 class="skill-section">Web & App <br> <span>Technologies</span> </h3>   
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>iOS App Development</li>
+                        <li>UI/UX Implementation</li>
+                        <li>Game Development</li>
+                        <li>Web Application Design</li>
+                        <li>VR Development</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="skills">
+    <div class="scroll-circle">
+        <svg viewBox="0 0 100 100" class="scroll-rotator">
+            <defs>
+            <path id="circlePath"
+                    d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" />
+            </defs>
 
-        <h3>&lt;Skills&gt;</h3>
-        <div class="technical_expertise">
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
-</svg>
-            <h4>Technical Expertise</h4>
-            <p>Object-Oriented Programming
-Database Design & Management
-API Design & Integration
-Linux/Unix-based Systems
-Version Control (Git)</p>
-        </div>
-
-        <div class="development_methodology">
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
-</svg>
-
-            <h5>Development Methodology</h5>
-            <p>Agile/Iterative Development
-User-Centered Design
-Component-Based Architecture
-Cross-Platform Development
-Performance Optimization/p>
-
-        </div>
-
-        <div class="web_tech">
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-</svg>
-            <h6>Web & App Technologies</h6>
-            <p>iOS App Development
-UI/UX Implementation
-Game Development
-Web Application Design</p>
-
-        </div>
-
+            <text class="scroll-text">
+            <textPath href="#circlePath">
+                SCROLL DOWN • SCROLL DOWN • SCROLL DOWN •
+            </textPath>
+            </text>
+        </svg>
+        
+        <div class="scroll-center">*</div>
     </div>
 
-    <div class="about">
-        <h7>&lt;About&gt;</h7>
-        <p>I am currently a student at CSU</p>
-        <p>I enjoy building clean, intuitive digital experiences. When I’m not sitting like a shrimp coding I am gaming, exploring new music, or enjoying the outdoors.</p>
+    
+    <h1 class="about-header">&ltAbout&gt</h1>
+    
+    <div class="about-content">
+        <main>
+            <p>I am currently a student at CSU.</p>
+            <p>I enjoy building clean, intuitive digital experiences. When I’m not sitting like a shrimp coding I am gaming, exploring new music, or enjoying the outdoors.</p>
+        </main>
+
+        <aside>
+        <pre>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣬⣿⡿⠿⢿⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀⠉⠙⠻⠿⣶⣦⣀⣠⣤⣤⣤⣤⣤⣤⣶⠿⠟⠫⠉⠀⠀⢀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⣀⣠⣤⠤⣤⣤⣀⡒⠀⣀⣤⡤⠶⠶⠤⣄⡀⠤⣀⣸⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⣠⡼⠛⠉⠀⠀⠀⠀⠀⠈⠙⠟⠉⠀⠀⠀⠀⠀⠈⠙⠳⣏⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⣤⣿⣻⣿⣿⣷⣿⣧⠀⠀⠀⠀⠀⢸⣿⣸⠋⠀⠠⠴⠶⠒⠒⠲⠆⠀⠀⠀⠀⠘⠓⠒⠒⠲⠶⠀⠀⠈⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢴⡿⣿⡿⠋⠉⠩⠙⣿⣿⣄⠀⠀⠀⠀⣼⣿⠇⠀⠀⠀⠀⠀⠀⣠⣿⣄⣀⣀⣀⣀⣀⣴⣄⠀⠀⠀⠀⠀⠀⡇⢻⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⣿⡿⠁⠀⠀⠀⠀⠹⣿⣿⣷⣄⠀⢰⣿⣿⠀⠀⠀⠀⠀⢀⣀⣨⣤⣤⠤⠤⠤⠤⠤⣬⣭⣄⣀⣀⠀⢀⡼⠁⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢠⣿⠁⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣷⣼⣿⣿⣠⠴⠖⠚⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠓⠶⢤⣸⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢿⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠸⣿⢰⠀⠀⠀⠀⠀⠀⠀⣠⣾⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡿⣿⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⡼⡀⠀⠀⠀⠀⣠⣾⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠈⢿⣻⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢻⣧⢅⠀⠀⢀⡾⣻⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⠀⠘⡇⠹⣇⠙⢿⣦⣀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠘⣿⡌⡀⣰⡟⢡⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⡗⠀⠹⣆⠀⠙⢿⣷⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢻⣧⣰⡟⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠞⠁⠀⠀⣰⠿⠀⠀⢻⡄⠀⠀⠙⢿⣧⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⣿⡟⡄⠀⠈⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠔⠃⠀⠀⢀⣴⠏⠂⠀⠀⠘⣧⡀⠀⠀⠀⠻⣷⡀⠀⠀
+⠀⠀⠀⠀⠀⢰⣿⢹⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⣀⣠⣤⡴⠶⠒⠒⠛⠛⠛⠛⠛⠛⢛⠛⠒⠒⠒⠒⠶⠶⠶⠶⠿⠥⠤⠤⠴⠶⡟⢀⠀⣿⠀⠀⠀⠀⠀⠹⣷⡀⠀
+⠀⠀⠀⠀⠀⣼⡏⠀⢠⣄⠀⠀⠀⠀⠉⠙⠛⠉⠉⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⢀⣠⠾⢻⡇⢻⢀⠀⠀⠀⠀⠀⢻⣇⠀
+⠀⠀⠀⠀⠀⣿⡇⠀⣾⠉⠷⣄⣂⣂⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⢴⡟⠁⠀⣼⣧⣼⡧⠄⢀⣠⣤⠀⣿⣿⣦
+⠀⢀⣄⣀⣀⣿⣧⡶⢿⣀⣠⡼⠋⠉⠉⠙⠳⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠞⠉⠀⠈⠷⣤⠾⠛⠀⢨⡽⠟⠋⣩⣯⣾⣿⣙⣿
+⠀⠸⣿⡉⠉⠛⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⣠⣶⣿⢿⣿⣯⣿⡏
+⠀⠀⢹⣷⣀⡴⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠹⣿⣿⣿⠛⠁
+⠀⢠⣿⠁⠀⠀⠀⠀⠀⢀⡴⠚⠉⢉⣉⣉⠉⠉⠒⠲⣿⣿⣿⣎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⢀⡠⣖⣦⣭⣤⣥⣐⠒⠦⢄⡀⠀⠀⠀⡤⠿⣿⣦⣤⠀
+⣤⣾⣇⣀⡀⠀⠀⠀⣠⠎⣠⡴⠛⠉⠉⠉⠹⣆⠀⢀⣿⣿⣿⣿⡄⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⣿⢀⠎⣾⠋⠀⠀⠀⠀⠉⠳⣄⠀⠙⡄⠀⠀⣧⣀⣤⡾⠟⠀
+⢿⣥⣀⣺⠇⠀⠀⢠⠇⣰⠏⠀⠀⠀⠀⠀⠀⣿⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⡜⠀⣇⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠁⠀⠀⢸⣿⠁⠀⠀⠀
+⠀⠹⣿⡁⠀⠀⠀⢸⠀⣯⠀⠀⠀⠀⠀⢀⣴⠃⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠙⢦⡀⠀⠀⠀⣀⣴⠏⠀⢀⡇⠀⣰⡿⠁⠀⠀⠀⠀
+⠀⠀⠈⢿⣦⡀⠀⠀⢣⡘⢦⣄⣀⣤⠶⠋⣡⣾⠟⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠟⢿⣦⣀⠉⠉⠉⠉⠉⠀⢀⡤⢋⣠⡾⠋⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠉⡛⣷⣶⣤⡭⠷⠤⣤⣴⣶⣟⡛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣻⣿⣷⣶⣶⣶⣴⣷⣾⣿⠛⠀⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+        </aside>
     </div>
 
-    <div class="footer">
-        <h8>nikolas.augustini@gmail.com</h8>
-    </div>
-</section>
+    
 </body>
 </html>
