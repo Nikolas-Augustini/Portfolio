@@ -42,9 +42,9 @@ body{
     }
 
     .x {
-  position: relative;
-  width: 40px;
-  height: 40px;
+        position: relative;
+        width: 40px;
+        height: 40px;
     }
 
     .x::before,
@@ -225,7 +225,13 @@ ul li{
     text-align: center;
 }
 
-.about pre{
+.about-content main{
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+}
+
+.about-content pre{
     font-size: .6em;
 
     overflow: hidden;
@@ -331,11 +337,32 @@ ul li{
         font-size: clamp(1rem, 5vw, 2.5rem);
     }
 
-    .about h1{
+
+    .about-header{
         font-size: clamp(3rem, 5vw, 6rem);
 
         margin-top: clamp(1rem, 5vw, 9rem);
         margin-bottom: .75rem;
+    }
+
+    .about-content {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .about-content main {
+        flex: 3;
+        font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
+
+        padding-top: clamp(1rem, 1vw + 4rem, 5rem);
+    }
+
+    .about-content aside {
+        flex: 1;
+        font-size: clamp(0.8rem, 0.8vw + 0.6rem, 2.5rem);
     }
 
     .scroll-circle {
