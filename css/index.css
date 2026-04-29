@@ -258,6 +258,10 @@ ul li{
         cursor: none;
     }
 
+    .top-bar{
+        position: fixed;
+    }
+
     .cursor-dot {
         position: fixed;
         width: 10px;
