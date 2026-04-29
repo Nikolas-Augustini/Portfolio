@@ -39,6 +39,8 @@ body{
 
         transform: translateX(-100%);
         transition: transform .4s ease;
+
+        z-index: 100;
     }
 
     .x {
@@ -72,6 +74,11 @@ body{
         font-size: 2rem;
         text-align: center;
         margin-right: 3rem;
+    }
+
+    .menu-display ul li a{
+        text-decoration: none;
+        color: black;
     }
 
     .menu-display.active{
@@ -196,6 +203,7 @@ h3 span{
 
 svg{
     max-width: 100%;
+    pointer-events: none;
 }
 
 .card_svg{
@@ -203,6 +211,7 @@ svg{
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     object-fit: cover;
+    pointer-events: none;
 }
 
 ul li{
@@ -251,6 +260,10 @@ ul li{
 
     body{
         cursor: none;
+    }
+
+    .top-bar{
+        position: fixed;
     }
 
     .cursor-dot {
