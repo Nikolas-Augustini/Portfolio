@@ -74,6 +74,11 @@ body{
         margin-right: 3rem;
     }
 
+    .menu-display ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
     .menu-display.active{
         transform: translateX(0);
     }
