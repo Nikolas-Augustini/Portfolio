@@ -7,6 +7,105 @@ body {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+#backgroundCanvas,
+#starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.menu{
+    padding: .5rem;
+    width: 2rem;
+    height: 1.2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .menu-display{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 250px;
+        height: 100vh;
+        align-items: center;
+
+        background: white;
+        color: black;
+
+        transform: translateX(-100%);
+        transition: transform .4s ease;
+    }
+
+    .x {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .x::before,
+    .x::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 4px;
+        background: black;
+        border-radius: 999px;
+        transform-origin: center;
+    }
+
+    .x::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .x::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .menu-display ul li{
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 3rem;
+    }
+
+    .menu-display.active{
+        transform: translateX(0);
+    }
+
+.line{
+    height: .4rem;
+    background-color: white;
+    border-radius: 100px;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(3rem, 8vw ,18rem);
+    font-weight: bold;
+
+    padding: 2rem;
+    text-align: left;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.name{
+    visibility: hidden;
+}
+
 .page-wrapper {
     padding: 1rem;
     min-height: 100vh;
@@ -164,6 +263,34 @@ img {
         pointer-events: none;
         transform: translate(-50%, -50%);
         z-index: 9998;
+    }
+
+        .menu{
+        padding: 1rem;
+        width: 3.5rem;
+        height: 2rem;
+    }
+
+    .menu:hover .line{
+        background-color: #9A0E0E;
+    }
+
+    .menu-display ul li:hover{
+        font-weight: bold;
+    }
+
+    .line{
+        height: .7rem;
+        background-color: white;
+        border-radius: 100px;
+    }
+
+    .name{
+        font-family: "Ubuntu Mono", monospace;
+        font-size: clamp(1rem, 3vh, 5rem);
+
+        color: white;
+        visibility: visible;
     }
 
     .terminal-window{
