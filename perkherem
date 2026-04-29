@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Kherem | Nikolas Augustini</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/spiderman.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="javascript/cursor.js"></script>
+
+    <canvas id="backgroundCanvas"></canvas>
+    <canvas id="starsCanvas"></canvas>
+    <script src="javascript/star.js"></script>
+
+    <div class = "top-bar">
+        <div class="menu" id="menuBtn">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="name">Nikolas Augustini._</div>
+    </div>
+
+    <nav class="menu-display" id="menu-display-test">
+       <div class="x"></div>
+        <ul>
+            <li>/Home</li>
+            <li>/About</li>
+            <li>/Projects</li>
+            <li>/Contact</li>
+        </ul>
+    </nav>
+
+    <script src="javascript/menu.js"></script>
+
+
+    <div class="page-wrapper">
+
+        <div class="terminal-window">
+
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Bookmarks</span>
+                <span>Plugins</span>
+                <span>Settings</span>
+            </div>
+
+            <div class="toolbar">
+                <div class="tool-btn">
+                    <img src="images/icons/newtab-dark.svg" alt="">
+                    <span>New Tab</span>
+                </div>
+                <div class="tool-btn">
+                    <img src="images/icons/splitview-dark.svg" alt="">
+                    <span>Split View</span>
+                </div>
+                <div class="tool-btn">
+                    <img src="images/icons/settings-dark.svg" alt="">
+                    <span>Settings</span>
+                </div>
+            </div>
+
+            <div class="tab-bar">
+                <div class="tab active">nikolas@portfolio:~</div>
+            </div>
+
+            <div class="terminal-body">
+
+                <div class="arrow arrow-left">&#9664;</div>
+                <div class="arrow arrow-right">&#9654;</div>
+
+                <main>
+
+                    <section class="feature">
+                        <img src="images/sp1.png" alt="chibi spiderman">
+                        <div class="feat-body">
+                            <h3>Friendly Neighborhood Spiderman</h3>
+                            <p>This project started as a quick creative warm-up. I used Python’s imageIO library to stitch together hand-drawn frames into a simple GIF.</p>
+                        </div>
+                    </section>
+
+                    <section class="feature-reverse">
+                        <img src="images/sp2.png" alt="chibi spiderman surprised">
+                        <div class="feat-body">
+                            <h3>Keepin it Simple</h3>
+                            <p>Working with imageIO reminded me how one library has such expansive potential. A quick python syntax refresher.</p>
+                        </div>
+                    </section>
+
+                    <section class="feature">
+                        <img src="images/spiderheart.gif" alt="chibi spiderman heart gif">
+                        <div class="feat-body">
+                            <h3>Made with (Spider) Love</h3>
+                            <p>Every frame of the gif was hand drawn by me. Slow but rewarding.</p>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/cli.js"></script>
+</body>
+</html>
