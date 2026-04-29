@@ -85,11 +85,11 @@ body {
 
 main {
     display: flex;
-    flex-direction: row;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
-    width: 100%;
+    width: 70%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .feature,
