@@ -39,6 +39,8 @@ body{
 
         transform: translateX(-100%);
         transition: transform .4s ease;
+
+        z-index: 100;
     }
 
     .x {
@@ -201,6 +203,7 @@ h3 span{
 
 svg{
     max-width: 100%;
+    pointer-events: none;
 }
 
 .card_svg{
@@ -208,6 +211,7 @@ svg{
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     object-fit: cover;
+    pointer-events: none;
 }
 
 ul li{
