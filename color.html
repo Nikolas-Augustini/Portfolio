@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker| Nikolas Augustini</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="javascript/cursor.js"></script>
+
+    <canvas id="backgroundCanvas"></canvas>
+    <canvas id="starsCanvas"></canvas>
+    <script src="javascript/star.js"></script>
+
+    <div class = "top-bar">
+        <div class="menu" id="menuBtn">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="name">Nikolas Augustini._</div>
+    </div>
+
+    <nav class="menu-display" id="menu-display-test">
+       <div class="x"></div>
+        <ul>
+            <li><a href="index.html#home">/Home</a></li>
+            <li><a href="index.html#skills">/Skills</a></li>
+            <li><a href="index.html#about">/About</a></li>
+            <li><a href="index.html#projects">/Projects</a></li>
+            <li><a href="index.html#contact">/Contact</a></li>
+        </ul>
+    </nav>
+
+    <script src="javascript/menu.js"></script>
+
+
+    <div class="page-wrapper">
+
+        <div class="terminal-window">
+
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Bookmarks</span>
+                <span>Plugins</span>
+                <span>Settings</span>
+            </div>
+
+            <div class="toolbar">
+                <div class="tool-btn">
+                    <img src="images/icons/newtab-dark.svg" alt="">
+                    <span>New Tab</span>
+                </div>
+                <div class="tool-btn">
+                    <img src="images/icons/splitview-dark.svg" alt="">
+                    <span>Split View</span>
+                </div>
+                <div class="tool-btn">
+                    <img src="images/icons/settings-dark.svg" alt="">
+                    <span>Settings</span>
+                </div>
+            </div>
+
+            <div class="tab-bar">
+                <div class="tab active">nikolas@portfolio:~</div>
+            </div>
+
+            <div class="terminal-body">
+
+                <div class="arrow arrow-left">&#9664;</div>
+                <div class="arrow arrow-right">&#9654;</div>
+
+                <main>
+
+                    <section class="feature">
+                        <img src="images/crabLogo.png" alt="Chroma Crabs Logo">
+                        <div class="feat-body">
+                            <h3>Concept</h3>
+                            <p>This is a small scale group project in which my teammates and I created our own "company." This website is designed to help pick out color palletes.</p>
+                        </div>
+                    </section>
+
+                    <section class="feature-reverse">
+                        <img src="images/gridSizing.png" alt="grid sizing option selector">
+                        <div class="feat-body">
+                            <h3>UI/UX Design</h3>
+                            <p>I was in charge of majority of the design decisions regarding this website. Along with designing the markup I was in charge of majority of the front end programming.</p>
+                        </div>
+                    </section>
+
+                    <section class="feature">
+                        <img src="images/meetTeam.png" alt="meet the team web page">
+                        <div class="feat-body">
+                            <h3>Collaboration</h3>
+                            <p>There was a combination of front-end and back-end development requiring proper communication. We utilized scrum like methods for majority of the project.</p>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/cli.js"></script>
+</body>
+</html>
