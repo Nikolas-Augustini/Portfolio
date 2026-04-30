@@ -118,6 +118,11 @@ ul li{
     margin-right: 1.5rem;
 }
 
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 .page-wrapper {
     padding: 1rem;
     min-height: 100vh;
@@ -218,7 +223,7 @@ main {
 }
 
 img {
-    width: 200px;
+    width: 70%;
     height: auto;
 }
 
@@ -321,7 +326,11 @@ img {
     }
 
     img {
-        width: 260px;
+        width: 90%;
+    }
+
+    #gif{
+        width: 30%;
     }
 
     .feat-body h3 {
