@@ -247,6 +247,15 @@ ul li{
     text-align: center;
 }
 
+#projects h1{
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.5rem;
+
+    padding-top: 3rem;
+    text-align: center;
+}
+
 .banner{
     width: 100%;
     height: 300px;
@@ -276,6 +285,7 @@ ul li{
 }
 
 .banner .slider .item{
+    padding-top: clamp(5rem, 2vw, 7rem);
     position: absolute;
     inset: 0 0 0 0;
     transform:
@@ -287,6 +297,8 @@ ul li{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    padding-bottom: 3rem;
 }
 
 .scroll-circle{
@@ -406,6 +418,7 @@ ul li{
         margin: 0 auto;
         flex-wrap: wrap;
         gap: 5rem;
+        padding-bottom: 13rem;
     }
 
     .about-content main {
@@ -418,6 +431,17 @@ ul li{
     .about-content aside {
         flex: 1;
         font-size: clamp(0.8rem, 0.8vw + 0.6rem, 2.5rem);
+    }
+
+    #projects h1{
+        font-size: clamp(3rem, 5vw, 6rem);
+
+        margin-top: clamp(3rem, 8vw, 12rem);
+        margin-bottom: 3rem;
+    }
+
+    .banner .slider .item img{
+        padding-bottom: 5rem;
     }
 
     .scroll-circle {
