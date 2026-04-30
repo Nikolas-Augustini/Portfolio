@@ -118,6 +118,11 @@ ul li{
     margin-right: 1.5rem;
 }
 
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 .page-wrapper {
     padding: 1rem;
     min-height: 100vh;
